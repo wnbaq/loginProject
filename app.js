@@ -23,11 +23,11 @@ app.post("/", function (req, res) {
         ]
     };
     const sednData = JSON.stringify(data);
-    
-    const url = "https://us21.api.mailchimp.com/3.0/9feb9fc375";
+    //url and auth apikey can be take mailchimp
+    const url = "apiKey"
     const options = {
         method: "POST",
-        auth: "Binan:7dd0717e1ca235d501c3d5df494c8a9f-us21"
+        auth: "auth"
     }
     const request = https.request(url, options, function (response) {
         response.on("data", function (data) {
